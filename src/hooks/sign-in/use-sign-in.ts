@@ -26,8 +26,6 @@ export const useSignInForm = () => {
           password: values.password,
         });
 
-        console.log("Hit here");
-
         if (authenticated.status === "complete") {
           await setActive({ session: authenticated.createdSessionId });
           toast({

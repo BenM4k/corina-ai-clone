@@ -101,6 +101,15 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.1.4
         version: 1.1.4(@types/react-dom@18.3.1)(@types/react@18.3.13)(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
+      '@uploadcare/blocks':
+        specifier: 0.50.4
+        version: 0.50.4
+      '@uploadcare/react-uploader':
+        specifier: ^1.3.0
+        version: 1.3.0(@types/react@18.3.13)(next@15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106))
+      '@uploadcare/upload-client':
+        specifier: ^6.14.2
+        version: 6.14.2
       axios:
         specifier: ^1.7.9
         version: 1.7.9
@@ -1327,6 +1336,9 @@ packages:
   '@swc/helpers@0.5.13':
     resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
 
+  '@symbiotejs/symbiote@1.11.7':
+    resolution: {integrity: sha512-fUOJwzuldeApJ533YeTdrfnpp4nsA+ss1eiNBodX7RHf4LnhPB2Z9HP4fF3m2YhKYnxK0whjXaKA+wrxTRP5qA==}
+
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
 
@@ -1475,6 +1487,31 @@ packages:
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+
+  '@uploadcare/blocks@0.50.4':
+    resolution: {integrity: sha512-hEnVp8Otyc3l7qCW1XfCVq8uQfq4Xr1sn24etEVOQWhFgqn8Z53WflOTxHdIa+Lg+DrNWgWgxqk0+t6B9T2qAA==}
+    deprecated: 'The `@uploadcare/blocks` package has been renamed to `@uploadcare/file-uploader`. Please migrate to the new package to continue receiving updates and support. You can find the migration guide here: https://uploadcare.com/docs/file-uploader/migration-to-1.x/'
+
+  '@uploadcare/file-uploader@1.11.1':
+    resolution: {integrity: sha512-ai0UJw+n2vrOfrWV07MezkY9v2Ck84cAo6gbuDvlNPk0Y8oDChKojm8xIxUlbYqOZwvmmVkXwggTPJlXEVAi4A==}
+
+  '@uploadcare/image-shrink@6.14.2':
+    resolution: {integrity: sha512-q+lUz4MhuDY0pTyLJ6EnTc/+LpQNfVf00qI9ey8SEWnydMb+/v+4O/86Y+IieG5Akbx37Zm0ZolOHLobYdN3Fg==}
+
+  '@uploadcare/react-adapter@0.3.0':
+    resolution: {integrity: sha512-XQLPAERn47XC9srFH3HeQpywyInSaJ6JFDKD5XNvaSL5y2KF3MZerwMHsc/brAOLDQox7lLjzPXzrwlWlcMVqw==}
+    peerDependencies:
+      '@types/react': 17 || 18
+
+  '@uploadcare/react-uploader@1.3.0':
+    resolution: {integrity: sha512-XO6MuUsz/HnZhYD1MOslosp6nSLuvkkxcA5Fwha12aWXvqmYzb8vSTfNH6ATHPp8CHtMGDzI6IXUK+w863DoEg==}
+    peerDependencies:
+      '@types/react': 17 || 18
+      next: 13 || 14
+
+  '@uploadcare/upload-client@6.14.2':
+    resolution: {integrity: sha512-SCdr6Ed9m1mgKm0DBzZGz1XkA0MK7VZk5I+JAAa/IumfM3SdBfogbhgGBSp0mawTMIGKtDtBADMUsrCoaqtrUg==}
+    engines: {node: '>=16'}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2395,6 +2432,10 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
+  keyux@0.7.2:
+    resolution: {integrity: sha512-Z8ULf9BhSx1hI2rKG2uNjcvMgQmza97ZW2w43phS5VaT4wiTka7tOL4i/GJSc79k65tbvpoTVNCZwam0pqoH6A==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
@@ -3186,6 +3227,18 @@ packages:
 
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+
+  ws@8.18.0:
+    resolution: {integrity: sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
 
   yaml@2.6.1:
     resolution: {integrity: sha512-7r0XPzioN/Q9kXBro/XPnA6kznR73DHq+GXh5ON7ZozRO6aMjbmiBuKste2wslTFkC5d1dw0GooOCepZXJ2SAg==}
@@ -4349,6 +4402,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+  '@symbiotejs/symbiote@1.11.7': {}
+
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
@@ -4531,6 +4586,50 @@ snapshots:
       eslint-visitor-keys: 4.2.0
 
   '@ungap/structured-clone@1.2.0': {}
+
+  '@uploadcare/blocks@0.50.4':
+    dependencies:
+      '@symbiotejs/symbiote': 1.11.7
+      '@uploadcare/image-shrink': 6.14.2
+      '@uploadcare/upload-client': 6.14.2
+      keyux: 0.7.2
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@uploadcare/file-uploader@1.11.1':
+    dependencies:
+      '@symbiotejs/symbiote': 1.11.7
+      '@uploadcare/image-shrink': 6.14.2
+      '@uploadcare/upload-client': 6.14.2
+      keyux: 0.7.2
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@uploadcare/image-shrink@6.14.2': {}
+
+  '@uploadcare/react-adapter@0.3.0(@types/react@18.3.13)':
+    dependencies:
+      '@types/react': 18.3.13
+
+  '@uploadcare/react-uploader@1.3.0(@types/react@18.3.13)(next@15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106))':
+    dependencies:
+      '@types/react': 18.3.13
+      '@uploadcare/file-uploader': 1.11.1
+      '@uploadcare/react-adapter': 0.3.0(@types/react@18.3.13)
+      next: 15.0.3(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@uploadcare/upload-client@6.14.2':
+    dependencies:
+      form-data: 4.0.1
+      ws: 8.18.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
@@ -5042,8 +5141,8 @@ snapshots:
       '@typescript-eslint/parser': 8.17.0(eslint@8.57.1)(typescript@5.7.2)
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.57.1)
       eslint-plugin-react: 7.37.2(eslint@8.57.1)
       eslint-plugin-react-hooks: 5.0.0(eslint@8.57.1)
@@ -5062,7 +5161,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.3.7
@@ -5074,22 +5173,22 @@ snapshots:
       is-glob: 4.0.3
       stable-hash: 0.0.4
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.17.0(eslint@8.57.1)(typescript@5.7.2)
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
@@ -5100,7 +5199,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.17.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -5620,6 +5719,8 @@ snapshots:
       array.prototype.flat: 1.3.2
       object.assign: 4.1.5
       object.values: 1.2.0
+
+  keyux@0.7.2: {}
 
   keyv@4.5.4:
     dependencies:
@@ -6515,6 +6616,8 @@ snapshots:
       strip-ansi: 7.1.0
 
   wrappy@1.0.2: {}
+
+  ws@8.18.0: {}
 
   yaml@2.6.1: {}
 
